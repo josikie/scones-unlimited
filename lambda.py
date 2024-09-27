@@ -68,7 +68,10 @@ def lambda_handler(event, context):
 
 # Filter 
 import json
-THRESHOLD = .93
+
+# to test failure, set it to 98 - 99,
+# to test success, set it to below 97
+THRESHOLD = .97
 
 def lambda_handler(event, context):
     
